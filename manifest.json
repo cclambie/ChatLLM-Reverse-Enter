@@ -1,0 +1,14 @@
+// manifest.json (Manifest V3 example)
+{
+  "manifest_version": 3,
+  "name": "Shift+Enter Form Submit",
+  "version": "1.0",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://apps.abacus.ai/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
